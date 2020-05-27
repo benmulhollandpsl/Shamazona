@@ -1,0 +1,43 @@
+// We use SQL databases to store the pieces of information we use app
+// we do this storing one 1 of 5 datatypes
+// a SQL table looks alot like an excel spreadsheet
+// we have rows and we have columns
+// every row represents a new entry
+// the columns represent the attributes
+// in javascript our user object would look like this below 
+// this is the result of creating a new Javascript object >>
+// let sampleUser = {
+//     email: "exampleemail",
+//     username: "exampeleuserName",
+//     favoriteNumber: 2
+// }
+// so in order to store our data in a database. we define this information in our schema.sql
+// the schema is the database design
+// CREATE DATABASE IF NOT EXISTS sample_db;
+// USE sample_db;
+// in order to store in a database we need to create tables to match our objects that we created for our application
+// -- Create the User table
+// CREATE TABLE User (
+//     id int NOT NULL AUTO_INCREMENT,
+//     userName varchar(255) NOT NULL,
+//     email BOOL DEFAULT false,
+//     favoriteNumber int NOT NULL
+//     PRIMARY KEY (id)
+// );
+// lets make some entries into our User table
+// INSERT INTO User ("userName", "email", "favoriteNumber")
+// VALUES ("codejones", "codejones@gmail.com", 2);
+// lets update an entry in our User table
+// UPDATE table_name
+// SET column1 = value1, column2 = value2, ...
+// WHERE condition;
+// UPDATE User
+// SET email = 'updatedEmail@email.com', favoriteNumber= 10
+// WHERE id = 1;
+// following this guide we have entered 1 user so far so that user would have an id of 1. this update query would update that said user.
+// lets find all users
+// SELECT * FROM User
+// lets find a specific user
+// SELECT * FROM User WHERE id = 1
+// lets delete our entry from our table in the database
+// DELETE FROM User WHERE id = 1; (edited) 
