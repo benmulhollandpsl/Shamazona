@@ -6,15 +6,10 @@ require("console.table");
 // Initializes the connection variable to sync with a MySQL database
 var connection = mysql.createConnection({
   host: "localhost",
-
-  // Your port; if not 3306
   port: 3306,
-
-  // Your username
   user: "root",
-
+  database: "shamazon",
   password: "password",
-  database: "shamazon"
 });
 
 //connection with server shows inventory
