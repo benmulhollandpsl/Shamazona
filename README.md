@@ -3,9 +3,9 @@ an amazon-like storefront Command Line Interface program using MySQL and npm Inq
 
 _____
 ## steps to start:
-* cd sga or cd into the directory that contains the sga.js file
+* cd shamazon or cd into the directory that contains the shamazon.js file
 * npm install or npm i
-* node sga.js
+* node shamazon.js
 
 * User is prompted to select an id number 15-28
   User should type one of those integers followed by return/enter key
