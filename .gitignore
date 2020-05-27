@@ -1,0 +1,3 @@
+# ignore the file literally named 
+*mysqltutorsession.txt
+*node_modules
